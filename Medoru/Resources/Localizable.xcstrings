@@ -1,0 +1,198 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "board.empty.body" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your classroom activity and learning posts will appear here." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "クラスのアクティビティや学習投稿がここに表示されます。" } }
+      }
+    },
+    "board.empty.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your board is ready" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ボードの準備ができました" } }
+      }
+    },
+    "board.postCount.format" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld posts" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "%lld件の投稿" } }
+      }
+    },
+    "board.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Board Stream" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ボードストリーム" } }
+      }
+    },
+    "classrooms.action" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Go to Classrooms" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "クラスルームへ" } }
+      }
+    },
+    "classrooms.body" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Join or create classrooms to learn with others and compete on leaderboards." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "クラスに参加・作成して、仲間と学びながらランキングに挑戦しましょう。" } }
+      }
+    },
+    "classrooms.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your Classrooms" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "あなたのクラスルーム" } }
+      }
+    },
+    "home.subtitle" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Continue your Japanese learning journey." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "日本語学習の旅を続けましょう。" } }
+      }
+    },
+    "home.welcome.format" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Welcome back, %1$@ (%2$@)!" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "おかえりなさい、%1$@（%2$@）さん！" } }
+      }
+    },
+    "learning.continue.action" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "View Lessons" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "レッスンを見る" } }
+      }
+    },
+    "learning.continue.body" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pick up where you left off with your lessons." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "前回の続きからレッスンを始めましょう。" } }
+      }
+    },
+    "learning.continue.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Continue Learning" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "学習を続ける" } }
+      }
+    },
+    "learning.kanji.action" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Browse Kanji" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "漢字を見る" } }
+      }
+    },
+    "learning.kanji.body" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Explore the kanji database organized by JLPT level." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "JLPTレベル別に整理された漢字を学びましょう。" } }
+      }
+    },
+    "learning.kanji.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Browse Kanji" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "漢字を探す" } }
+      }
+    },
+    "learning.section.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Keep Learning" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "学習を続ける" } }
+      }
+    },
+    "learning.words.action" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Browse Words" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "単語を見る" } }
+      }
+    },
+    "learning.words.body" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Learn Japanese words and see their kanji breakdown." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "日本語の単語と漢字の構成を学びましょう。" } }
+      }
+    },
+    "learning.words.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Browse Vocabulary" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "単語を探す" } }
+      }
+    },
+    "nav.notifications" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知" } }
+      }
+    },
+    "nav.profile" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Profile" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "プロフィール" } }
+      }
+    },
+    "progress.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Level Progress" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "レベル進捗" } }
+      }
+    },
+    "progress.value.format" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%1$lld / %2$lld XP" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "%1$lld / %2$lld XP" } }
+      }
+    },
+    "stats.currentStreak" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Current Streak" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "現在の連続記録" } }
+      }
+    },
+    "stats.grammar" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Grammar Learned" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "学習した文法" } }
+      }
+    },
+    "stats.kanji" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Kanji Learned" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "学習した漢字" } }
+      }
+    },
+    "stats.level" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Level" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "レベル" } }
+      }
+    },
+    "stats.longestStreak" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Longest Streak" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "最長連続記録" } }
+      }
+    },
+    "stats.words" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Words Learned" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "学習した単語" } }
+      }
+    },
+    "streak.action" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Daily Challenges" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "デイリーチャレンジ" } }
+      }
+    },
+    "streak.body" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Complete any challenge to keep your streak going!" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "チャレンジを達成して連続記録を伸ばしましょう！" } }
+      }
+    },
+    "streak.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Keep Your Streak Going!" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "連続記録を伸ばそう！" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
