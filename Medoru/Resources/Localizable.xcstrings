@@ -134,13 +134,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Welcome back, %1$@ (%2$@)!"
+            "value" : "Welcome back, %1$@!"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "おかえりなさい、%1$@（%2$@）さん！"
+            "value" : "おかえりなさい、%1$@さん！"
           }
         }
       }

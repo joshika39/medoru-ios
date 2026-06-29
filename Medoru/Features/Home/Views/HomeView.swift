@@ -71,7 +71,6 @@ struct HomeView: View {
     private var welcomeText: String {
         String.localizedStringWithFormat(
             String(localized: "home.welcome.format"),
-            dashboard.profile.fullName,
             dashboard.profile.username
         )
     }
