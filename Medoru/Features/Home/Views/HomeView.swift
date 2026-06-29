@@ -4,6 +4,8 @@ struct HomeView: View {
     let dashboard: HomeDashboard
     var onAction: (HomeAction) -> Void = { _ in }
 
+    @State private var isShowingNotifications = false
+
     private let columns = [
         GridItem(.flexible(), spacing: 12),
         GridItem(.flexible(), spacing: 12)
@@ -38,20 +40,77 @@ struct HomeView: View {
 
             ToolbarItemGroup(placement: .topBarTrailing) {
                 Button {
+                    isShowingNotifications = true
                     onAction(.notifications)
                 } label: {
-                    Image(systemName: "bell")
+                    NotificationBellButtonLabel(unreadCount: dashboard.unreadNotificationCount)
                 }
                 .accessibilityLabel(Text("nav.notifications"))
 
-                Button {
-                    onAction(.profile)
+                Menu {
+                    Section("profile.menu.account") {
+                        Button {
+                            onAction(.profile)
+                        } label: {
+                            Label("profile.menu.myProfile", systemImage: "person.crop.circle")
+                        }
+
+                        Button {
+                            onAction(.profileSettings)
+                        } label: {
+                            Label("profile.menu.settings", systemImage: "gearshape")
+                        }
+
+                        Button {
+                            onAction(.dataPrivacy)
+                        } label: {
+                            Label("profile.menu.dataPrivacy", systemImage: "checkmark.shield")
+                        }
+
+                        Button {
+                            onAction(.blockedUsers)
+                        } label: {
+                            Label("profile.menu.blockedUsers", systemImage: "exclamationmark.shield")
+                        }
+
+                        Button {
+                            onAction(.language)
+                        } label: {
+                            Label("profile.menu.language", systemImage: "character.bubble")
+                        }
+
+                        Button {
+                            onAction(.chatShortcuts)
+                        } label: {
+                            Label("profile.menu.chatShortcuts", systemImage: "command.square")
+                        }
+
+                        Button {
+                            onAction(.dailyTest)
+                        } label: {
+                            Label("profile.menu.dailyTest", systemImage: "checklist.checked")
+                        }
+                    }
+
+                    Divider()
+
+                    Button(role: .destructive) {
+                        onAction(.signOut)
+                    } label: {
+                        Label("profile.menu.signOut", systemImage: "rectangle.portrait.and.arrow.right")
+                    }
                 } label: {
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.title3)
+                    ProfileAvatar(initials: dashboard.profile.initials)
                 }
                 .accessibilityLabel(Text("nav.profile"))
             }
+        }
+        .sheet(isPresented: $isShowingNotifications) {
+            NavigationStack {
+                NotificationCenterView(notifications: dashboard.notifications)
+            }
+            .presentationDetents([.medium, .large])
+            .presentationDragIndicator(.visible)
         }
     }
 
@@ -250,6 +309,13 @@ struct HomeView: View {
 enum HomeAction {
     case notifications
     case profile
+    case profileSettings
+    case dataPrivacy
+    case blockedUsers
+    case language
+    case chatShortcuts
+    case dailyTest
+    case signOut
     case dailyChallenges
     case classrooms
     case lessons
