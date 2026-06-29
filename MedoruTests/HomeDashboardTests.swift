@@ -59,6 +59,21 @@ final class HomeDashboardTests: XCTestCase {
         XCTAssertEqual(profile.initials, "T")
     }
 
+    func testPrimaryHomeActionsMapToDestinations() {
+        XCTAssertEqual(HomeDestination(action: .notifications), .notifications)
+        XCTAssertEqual(HomeDestination(action: .profile), .profile)
+        XCTAssertEqual(HomeDestination(action: .dailyChallenges), .dailyChallenges)
+        XCTAssertEqual(HomeDestination(action: .classrooms), .classrooms)
+        XCTAssertEqual(HomeDestination(action: .lessons), .lessons)
+        XCTAssertEqual(HomeDestination(action: .kanji), .kanji)
+        XCTAssertEqual(HomeDestination(action: .words), .words)
+    }
+
+    func testSecondaryHomeActionsDoNotCreatePrimaryDestinations() {
+        XCTAssertNil(HomeDestination(action: .profileSettings))
+        XCTAssertNil(HomeDestination(action: .signOut))
+    }
+
     private func makeDashboard(
         currentExperience: Int = 0,
         experienceForNextLevel: Int = 1_000,

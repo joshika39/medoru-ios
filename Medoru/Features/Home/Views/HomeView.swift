@@ -4,8 +4,6 @@ struct HomeView: View {
     let dashboard: HomeDashboard
     var onAction: (HomeAction) -> Void = { _ in }
 
-    @State private var isShowingNotifications = false
-
     private let columns = [
         GridItem(.flexible(), spacing: 12),
         GridItem(.flexible(), spacing: 12)
@@ -40,7 +38,6 @@ struct HomeView: View {
 
             ToolbarItemGroup(placement: .topBarTrailing) {
                 Button {
-                    isShowingNotifications = true
                     onAction(.notifications)
                 } label: {
                     NotificationBellButtonLabel(unreadCount: dashboard.unreadNotificationCount)
@@ -104,13 +101,6 @@ struct HomeView: View {
                 }
                 .accessibilityLabel(Text("nav.profile"))
             }
-        }
-        .sheet(isPresented: $isShowingNotifications) {
-            NavigationStack {
-                NotificationCenterView(notifications: dashboard.notifications)
-            }
-            .presentationDetents([.medium, .large])
-            .presentationDragIndicator(.visible)
         }
     }
 
